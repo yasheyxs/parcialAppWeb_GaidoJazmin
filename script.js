@@ -6,7 +6,7 @@ let idCounter = 1; // ID autoincremental
 
 imageForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
     const imageUrl = document.getElementById("imageUrl").value;
@@ -27,12 +27,6 @@ function displayImages() {
     const emptyGalleryMessage = document.getElementById("emptyGalleryMessage");
 
     imageGallery.innerHTML = "";
-
-    if (images.length === 0) {
-        emptyGalleryMessage.style.display = "block"; // Muestra el mensaje de galería vacía
-    } else {
-        emptyGalleryMessage.style.display = "none"; // Oculta el mensaje de galería vacía
-    }
 
     images.forEach((image) => {
         const imageCard = document.createElement("div");
