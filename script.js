@@ -6,7 +6,7 @@ let idCounter = 1; // ID autoincremental
 
 imageForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
     const imageUrl = document.getElementById("imageUrl").value;
